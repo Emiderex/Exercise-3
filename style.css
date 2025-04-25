@@ -1,0 +1,62 @@
+:root {
+    --bg-color: rgb(127, 172, 211);
+    --bg-color2: rgb(255, 255, 255);
+    --txt-color: rgb(108, 119, 117);
+    --badge-color: rgb(212, 241, 179);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: var(--bg-color);
+}
+
+main {
+    max-width: 400px;
+    background-color: var(--bg-color2);
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    position: relative;
+}
+
+.container .badge{
+    position: absolute;
+    top: 10px;
+    left: -10px;
+    background-color: var(--badge-color);
+    padding: 10px 20px;
+    border-radius: 10px 50px 50px 10px;
+}
+
+.container img {
+    width:  100%;
+    border-radius: 15px 15px 0 0; 
+}
+
+.container_2 {
+    padding: 25px;
+}
+
+.container_2 h1 {
+    padding-bottom: 20px;
+}
+
+.container_2 p {
+    font-size: 17px;
+}
+
+span {
+    font-size: 20px;
+    color: var(--txt-color);
+}
